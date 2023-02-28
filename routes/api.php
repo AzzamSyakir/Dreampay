@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-// Auth
+// Auth & login
 Route::post('authenticate', [AuthController::class, 'authenticate']);
+Route::post('login', [AuthController::class, 'LoginUser']);
 
 
 // Buyer
