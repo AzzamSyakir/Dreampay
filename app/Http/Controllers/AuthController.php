@@ -19,7 +19,7 @@ class AuthController extends Controller
         }
 
         return response()->json([
-            'message' => 'No HP tidak ditemukan',
+            'message' => 'No HP tidak terdaftar',
         ], 401);
     }
     public function LoginUser(Request $request)
@@ -36,7 +36,7 @@ class AuthController extends Controller
 
         if (!$user) {
             return response()->json([
-                'message' => 'no tidak terdaftar'
+                'message' => 'No HP tidak terdaftar'
             ], 401);
         }
 
@@ -51,6 +51,7 @@ class AuthController extends Controller
         }
 
         return response()->json([
+            'message' => 'berhasil login',
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer',
             'expires_at' => Carbon::parse(
