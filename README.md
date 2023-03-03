@@ -1,4 +1,4 @@
-<h1>Konfigurasi untuk jalankan<h1>
+<h1>Konfigurasi untuk jalankan aplikasi<h1>
 1. jalankan
 `composer install`
 
