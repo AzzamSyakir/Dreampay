@@ -1,3 +1,28 @@
+<h1>Konfigurasi untuk jalankan aplikasi<h1>
+
+
+1. jalankan
+`composer install`
+
+2. Copy .env.example ke  .env 
+
+3. Generete the app key
+`php artisan key:generate`
+
+4. Migrate the migration
+`php artisan migrate`
+
+5. Serve the application
+`php artisan serve`
+
+6.install library passport
+`php artisan passport:install`
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +89,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
